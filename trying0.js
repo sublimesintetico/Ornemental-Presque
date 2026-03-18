@@ -1,9 +1,3 @@
-/*import { Previewer } from 'pagedjs';
-let paged = new Previewer();
-let flow = paged.preview(DOMContent, ["path/to/css/file.css"], document.body).then((flow) => {
-	console.log("Rendered", flow.total, "pages.");
-})*/
-
 window.addEventListener("load", () => {
 	escribirType();
 })
@@ -75,7 +69,7 @@ function escribirType() {
 
 			for (var i = 1; i <= 4; i++) {
 				let img = document.createElement('img');
-				img.src = '/media/trying0/ornaments/No-Contour/' + e.key.toLowerCase() + '.png';
+				img.src = './media/trying0/ornaments/No-Contour/' + e.key.toLowerCase() + '.png';
 				img.style = centralOrnament(i, row, col, size) +"z-index:" + zIndex + "; justify-items: center; align-items: center; object-fit: contain; width: 100%; border: solid; border-width: 0.5px; border-color: white; outline: 0.5px solid black;" + rotation(i)
 				document.getElementById('grid').appendChild(img);
 			}
